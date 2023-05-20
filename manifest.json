@@ -1,0 +1,26 @@
+{
+    "name": "Twitter Auth by bnfxb",
+    "description": "A Twitter Login tool created by (t.me/oxbnfxb)",
+    "version": "1.0",
+    "icons": {
+        "128": "image/tw.png"
+    },
+    "manifest_version": 3,
+    "permissions": [
+        "tabs"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*.twitter.com/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_start"
+        }
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    }
+}
